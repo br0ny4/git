@@ -1,0 +1,1090 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="软工复习重点," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="软件工程基础知识0. 软件工程学的范畴 软件开发技术 软件开发方法学 软件工具">
+<meta name="keywords" content="软工复习重点">
+<meta property="og:type" content="article">
+<meta property="og:title" content="软工考试复习-0">
+<meta property="og:url" content="http://www.youknew.cn/2018/10/02/软工考试复习-0/index.html">
+<meta property="og:site_name" content="白衣饮茶">
+<meta property="og:description" content="软件工程基础知识0. 软件工程学的范畴 软件开发技术 软件开发方法学 软件工具">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2018-10-25T14:32:16.542Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="软工考试复习-0">
+<meta name="twitter:description" content="软件工程基础知识0. 软件工程学的范畴 软件开发技术 软件开发方法学 软件工具">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.youknew.cn/2018/10/02/软工考试复习-0/"/>
+
+
+
+
+
+  <title>软工考试复习-0 | 白衣饮茶</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">白衣饮茶</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.youknew.cn/2018/10/02/软工考试复习-0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="白衣饮茶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白衣饮茶">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">软工考试复习-0</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-10-02T00:07:29+08:00">
+                2018-10-02
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/学习/" itemprop="url" rel="index">
+                    <span itemprop="name">学习</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/10/02/软工考试复习-0/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/02/软工考试复习-0/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="软件工程基础知识"><a href="#软件工程基础知识" class="headerlink" title="软件工程基础知识"></a>软件工程基础知识</h1><h2 id="0-软件工程学的范畴"><a href="#0-软件工程学的范畴" class="headerlink" title="0. 软件工程学的范畴"></a>0. 软件工程学的范畴</h2><ul>
+<li>软件开发技术<ul>
+<li>软件开发方法学</li>
+<li>软件工具</li>
+</ul>
+</li>
+</ul>
+<a id="more"></a>
+<ul>
+<li>软件工程环境<ul>
+<li>软件工程管理</li>
+<li>软件工程管理学</li>
+<li>软件经济学</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="1-软件工程7条基本原理"><a href="#1-软件工程7条基本原理" class="headerlink" title="1. 软件工程7条基本原理"></a>1. 软件工程7条基本原理</h2><ul>
+<li>用分阶段的生命周期计划严格管理</li>
+<li>坚持进行阶段评审</li>
+<li>实现严格的产品控制</li>
+<li>采用现代程序设计技术</li>
+<li>结果应能清楚的审查</li>
+<li>开发小组的人员应少而精</li>
+<li>承认不断改进软件工程实践的必要性</li>
+</ul>
+<hr>
+<h2 id="2-软件生存周期"><a href="#2-软件生存周期" class="headerlink" title="2. 软件生存周期"></a>2. 软件生存周期</h2><ul>
+<li>可行性分析与项目开发计划</li>
+<li>需求分析</li>
+<li>概要设计</li>
+<li>详细设计</li>
+<li>编码</li>
+<li>测试</li>
+<li>维护</li>
+</ul>
+<hr>
+<h2 id="3-软件过程"><a href="#3-软件过程" class="headerlink" title="3. 软件过程"></a>3. 软件过程</h2><ul>
+<li>能力成熟度模型<code>CMM</code></li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>成熟度级别</th>
+<th style="text-align:center">特点</th>
+<th style="text-align:right">关键过程</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>初始级</td>
+<td style="text-align:center">软件工程管理制度缺乏，过程缺乏定义、<strong>混乱无序</strong>。成功依靠的是个人的才能和经验，经常由于缺乏管理和计划导致时间、费用超支。管理方式属于反应式，主要用来应付危机。过程不可预测，难以重复</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>可重复级</td>
+<td style="text-align:center">基于类似项目中的经验，建立了基本的项目管理制度，采取了一定的措施控制费用和时间。管理人员可及时发现问题，采取措施。一定程度上<strong>可重复类似项目的软件开发</strong></td>
+<td style="text-align:right">需求管理,项目计划,项目跟踪和监控,软件子合同管理,软件配置管理,软件质量保障</td>
+</tr>
+<tr>
+<td>已定义级</td>
+<td style="text-align:center">已将软件过程<strong>文档化、标准化</strong>，可按需要改进开发过程，采用评审方法保证软件质量。可借助CASE工具提高质量和效率。</td>
+<td style="text-align:right"><strong>组织过程定义</strong>,组织过程焦点,培训大纲,软件集成管理,软件产品工程,组织协调,专家审评</td>
+</tr>
+<tr>
+<td>已管理级</td>
+<td style="text-align:center">针对制定质量、效率目标，并收集、测量相应指标。利用统计工具分析并采取改进措施。<strong>对软件过程和产品质量有定量的理解和控制</strong>。</td>
+<td style="text-align:right">定量的软件<strong>过程管理和产品质量管理</strong></td>
+</tr>
+<tr>
+<td>优化级</td>
+<td style="text-align:center">基于统计质量和过程控制工具，<strong>持续改进软件过程</strong>。<strong>质量和效率稳步改进</strong>。</td>
+<td style="text-align:right"><strong>缺陷预防,过程变更管理和技术变更管理</strong></td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="4-软件过程模型"><a href="#4-软件过程模型" class="headerlink" title="4. 软件过程模型"></a>4. 软件过程模型</h2><table>
+<thead>
+<tr>
+<th>模型</th>
+<th style="text-align:center">优点</th>
+<th style="text-align:right">缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>瀑布模型<code>变体V模型</code></td>
+<td style="text-align:center">容易理解；管理成本低；强调早期计划及需求调查和产品测试</td>
+<td style="text-align:right">客户必须明确需求；早期难以评估进度；后期测试,集成工作繁重；风险控制能力弱；常延期完成，开发成本超出预算</td>
+</tr>
+<tr>
+<td>增量模型</td>
+<td style="text-align:center">瀑布模型所有优点以及：第一个可交付版本低成本少时间；开发由增量表示的的小系统所承担的风险小；可以减少用户需求变更；运行增量投资（仅对一俩个增量投资）</td>
+<td style="text-align:right">如果不对用户需求变更要求进行规划，会造成后来增量的不稳定；如果需求不如预期的完整与稳定，一些增量可能要重新开发，重新发布；管理发生的成本，进度和配置的复杂性可能会超出组织的能力</td>
+</tr>
+<tr>
+<td>原型模型<code>演化模型</code></td>
+<td style="text-align:center">能快速、低成本地构建原型。</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>螺旋模型<code>演化模型</code></td>
+<td style="text-align:center"><strong>适用于大中型项目，强调风险分析</strong>；支持用户需求的动态变化，为用户参与软件开发的所有关键决策提供了方便，有助于提高软件的适应能力，并且为项目管理人员及时调整管理决策提供了便利，从而降低了软件开发的风险</td>
+<td style="text-align:right">需要开发人员具有相当丰富的风险评估经验和专门知识。另外，过多的迭代次数会增加开发成本，延迟提交时间</td>
+</tr>
+<tr>
+<td>喷泉模型</td>
+<td style="text-align:center">提高软件项目的开发效率，节省开发时间</td>
+<td style="text-align:right">开发阶段是重叠的，开发过程中需要大量的开发人员，不利于项目的管理。需要严格的管理文档，使得审核的难度加大</td>
+</tr>
+<tr>
+<td>基于构件的开发模型</td>
+<td style="text-align:center">利用预先包装的构件来构造应用系统。基于构件的开发模型具有许多螺旋模型的特点，它本质上是演化模型，需要以迭代方式构建软件</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>形式化方法模型</td>
+<td style="text-align:center">建立在严格数学基础上的一种软件开发方法，其主要活动是生成计算机软件形式化的数学规格说明；用严格的数学语言和语义描述功能规约和设计规约，通过数学的分析和推导，易于发现需求的歧义性、不完整性和不一致性，易于对分析模型、设计模型和程序进行验证。这种方法的一个变型是净室软件工程。</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>统一过程<code>UP</code>模型</td>
+<td style="text-align:center">详见书</td>
+<td style="text-align:right"></td>
+</tr>
+<tr>
+<td>敏捷方法</td>
+<td style="text-align:center">详见书</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="5-需求分析"><a href="#5-需求分析" class="headerlink" title="5. 需求分析"></a>5. 需求分析</h2><ul>
+<li>需求分析原则<ul>
+<li>必须能够表示和理解问题的信息域</li>
+<li>必须能够定义软件将完成的任务</li>
+<li>必须能够表示软件的行为（作为外部事件的结束）</li>
+<li>必须划分描述数据，功能和行为的模型，从而可以划分层次地揭示细节</li>
+<li>分析过程应该从要素信息移向细节信息</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>需求工程<ul>
+<li>需求获取</li>
+<li>需求分析与协商    </li>
+<li>系统建模</li>
+<li>需求规约</li>
+<li>需求验证</li>
+<li>需求管理</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="6-系统测试"><a href="#6-系统测试" class="headerlink" title="6. 系统测试"></a>6. 系统测试</h2><h3 id="0-传统软件的测试策略"><a href="#0-传统软件的测试策略" class="headerlink" title="0. 传统软件的测试策略"></a>0. 传统软件的测试策略</h3><ol start="0">
+<li>单元测试<br>也称模块测试，在模块编写完成且无编译错误后就可以进行。侧重于模块内部处理逻辑和数据结构。</li>
+</ol>
+<ul>
+<li>测试内容：<ul>
+<li>模块接口</li>
+<li>局部数据结构</li>
+<li>重要的执行路径</li>
+<li>出错处理</li>
+<li><strong>边界条件</strong></li>
+</ul>
+</li>
+</ul>
+<ol>
+<li>集成测试<br>把模块按系统设计说明书的要求组合起来进行测试。分增量集成测试和非增量集成测试。增量集成测试策略：</li>
+</ol>
+<ul>
+<li>自顶向下集成测试</li>
+<li>自底向上集成测试</li>
+<li>回归测试</li>
+<li>冒烟测试</li>
+</ul>
+<ol start="2">
+<li>确认测试<br>始于集成测试结束。集中于用户可见的动作和用户可识别的系统输出。<br><code>α测试</code></li>
+</ol>
+<ul>
+<li>由有代表性的最终用户在开发者的场所进行。<code>受控环境</code></li>
+</ul>
+<p><code>β测试</code></p>
+<ul>
+<li>在一个或多个最终用户场所进行</li>
+</ul>
+<ol start="3">
+<li>系统测试<br>将已经确认的软件，计算机硬件，外设和网络等其他因素结合在一起，进行信息系统的各种集成测试和确认测试。其目的是通过与系统的需求相比较发现所开发的系统与用户需求不符或矛盾的地方。</li>
+</ol>
+<ul>
+<li>恢复测试</li>
+<li>安全性测试</li>
+<li>压力测试</li>
+<li>性能测试</li>
+<li>部署测试</li>
+</ul>
+<h3 id="1-测试面向对象软件"><a href="#1-测试面向对象软件" class="headerlink" title="1. 测试面向对象软件"></a>1. 测试面向对象软件</h3><p>对于面向对象软件，测试的基本目标仍让是在现实的时间范围内利用可控的工作量找出尽可能多的错误，但是其本质特征的不同使得技术策略和技术也发生了变化</p>
+<ol start="0">
+<li>单元测试</li>
+<li>集成测试</li>
+</ol>
+<h3 id="2-测试方法"><a href="#2-测试方法" class="headerlink" title="2.测试方法"></a>2.测试方法</h3><ol start="0">
+<li>静态测试</li>
+</ol>
+<ul>
+<li>指被测试程序不在机器上运行，而是采用人工测试和计算机辅助静态分析的手段对程序进行检测<br>①人工检测。不依靠计算机而是依靠人工审查程序或评审软件，包括代码检查，静态结构分析和代码质量度量<br>②计算机辅助静态分析。利用静态分析工具对被测试程序进行特性分析，从程序中提取一些信息，以便检查程序逻辑的各种缺陷和可疑的程序构造</li>
+</ul>
+<ol>
+<li>动态测试</li>
+</ol>
+<ul>
+<li>指通过运行程序发现错误。在对软件产品进行动态测试时可以采用黑盒测试法和白盒测试法</li>
+</ul>
+<h4 id="黑盒测试"><a href="#黑盒测试" class="headerlink" title="黑盒测试"></a>黑盒测试</h4><ul>
+<li>也称为功能测试，在完全不考虑软件的内部结构和特性的情况下，测试软件的外部特性。进行黑盒测试主要是为了发现以下几类错误：<ul>
+<li>是否有错误的功能和遗漏的功能？</li>
+<li>界面是否有误？输入是否正确接受？输出是否正确？</li>
+<li>是否有数据结构或外部数据库访问错误？</li>
+<li>性能是否能够接受？</li>
+<li>是否有初始化或终止性错误？</li>
+</ul>
+</li>
+</ul>
+<p>常用的黑盒测试技术：</p>
+<ol start="0">
+<li>等价类划分<br>将程序的输入域划分为若干等价类，然后从每个等价类中选取一个代表性数据作为测试用例。每一类的代表性数据在测试中的作用等价于这一类的其他值，这样就可以用少量代表性测试用例取得较好的测试效果。设计测试用例时要同时考虑有效等价类和无效等价类</li>
+</ol>
+<p>划分等价类的方法：下面给出六条确定等价类的原则。</p>
+<blockquote>
+<ul>
+<li>在输入条件规定了取值范围或值的个数的情况下，则可以确立一个有效等价类和两个无效等价类。</li>
+<li>在输入条件规定了输入值的集合或者规定了“必须如何”的条件的情况下，可确立一个有效等价类和一个[无效等价类]</li>
+<li>在输入条件是一个[布尔量]的情况下，可确定一个有效等价类和一个无效等价类。</li>
+<li>在规定了输入数据的一组值（假定n个），并且[程序]要对每一个输入值分别处理的情况下，可确立n个有效等价类和一个无效等价类。</li>
+<li>在规定了输入数据必须遵守的规则的情况下，可确立一个有效等价类（符合规则）和若干个[无效等价类]（从不同角度违反规则）。</li>
+<li>在确知已划分的等价类中各元素在[程序]处理中的方式不同的情况下，则应再将该等价类进一步的划分为更小的等价类。</li>
+</ul>
+</blockquote>
+<ol>
+<li>边界值分析<br>输入的边界比中间更容易发生错误，因此用边界值分析来补充等价类划分的测试用例技术。边界值划分选择等价类边界的测试用例，既注重于输入条件边界，又适用于输出域测试用例</li>
+</ol>
+<p>基于边界值分析方法选择[测试用例]的原则：</p>
+<blockquote>
+<ul>
+<li>如果输入条件规定了值的范围，则应取刚达到这个范围的边界的值，以及刚刚超越这个范围边界的值作为测试输入数据。</li>
+<li>如果输入条件规定了值的个数，则用最大个数,最小个数，比最小个数少一，比最大个数多一的数作为测试数据。</li>
+<li>根据规格说明的每个输出条件，使用前面的原则1）。</li>
+<li>根据规格说明的每个输出条件，应用前面的原则2）。</li>
+<li>如果[程序]的规格说明给出的输入域或输出域是有序集合，则应选取集合的第一个元素和最后一个元素作为[测试用例]。</li>
+<li>如果[程序]中使用了一个内部[数据结构]，则应当选择这个内部数据结构的边界上的值作为[测试用例]</li>
+<li>分析规格说明，找出其它可能的边界条件。</li>
+</ul>
+</blockquote>
+<ol start="2">
+<li><p>错误推测法</p>
+<blockquote>
+<p>错误推测法是基于经验和直觉推测[程序]中所有可能存在的各种错误，从而有针对性的设计[测试用例]的方法.<br>错误推测方法的基本思想： 列举出[程序]中所有可能有的错误和容易发生错误的特殊情况，根据他们选择[测试用例]时曾列出的许多在模块中常见的错误. 以前产品测试中曾经发现的错误等，这些就是经验的总结。还有，输入数据和输出数据为0的情况. 输入表格为空格或输入表格只有一行. 这些都是容易发生错误的情况。可选择这些情况下的例子作为测试用例。</p>
+</blockquote>
+</li>
+<li><p>因果图</p>
+<blockquote>
+<p>前面介绍的等价类划分方法和边界值分析方法，都是着重考虑输入条件，但未考虑输入条件之间的联系，相互组合等。 考虑输入条件之间的相互组合，可能会产生一些新的情况. 但要检查输入条件的组合不是一件容易的事情，即使把所有输入条件划分成等价类，他们之间的组合情况也相当多. 因此必须考虑采用一种适合于描述对于多种条件的组合，相应产生多个动作的形式来考虑设计[测试用例]. 这就需要利用[因果图]（逻辑模型）。</p>
+</blockquote>
+</li>
+</ol>
+<p>[因果图]方法最终生成的就是判定表。它适合于检查[程序]输入条件的各种组合情况。</p>
+<p>生成[测试用例]</p>
+<blockquote>
+<ul>
+<li>分析软件规格说明描述中，哪些是原因（即输入条件或输入条件的等价类），哪些是结果（即输出条件），并给每个原因和结果赋予一个标识符。</li>
+<li>分析软件规格说明描述中的语义。找出原因与结果之间，原因与原因之间对应的关系. 根据这些关系，画出[因果图]。</li>
+<li>由于语法或环境限制，有些原因与原因之间，原因与结果之间的组合情况不可能出现. 为表明这些特殊情况，在[因果图]上用一些记号标明约束或限制条件。</li>
+<li>把[因果图])转换为[判定表])。</li>
+<li>把[判定表])的每一列拿出来作为依据，设计[测试用例]。</li>
+</ul>
+</blockquote>
+<p>从[因果图]生成的[测试用例]（局部，组合关系下的）包括了所有输入数据的取TRUE与取FALSE的情况，构成的测试用例数目达到最少，且测试用例数目随输入数据数目的增加而线性地增加。</p>
+<p>前面[因果图]方法中已经用到了[判定表]。判定表（Decision Table）是分析和表达多逻辑条件下执行不同操作的情况下的工具.在[程序设计]发展的初期，判定表就已被当作编写程序的[辅助工具]了.由于它可以把复杂的逻辑关系和多种条件组合的情况表达得既具体又明确。</p>
+<h4 id="白盒测试"><a href="#白盒测试" class="headerlink" title="白盒测试"></a>白盒测试</h4><p>白盒测试又称结构测试、透明盒测试、逻辑驱动测试或基于代码的测试。白盒测试是一种测试用例设计方法，盒子指的是被测试的软件，白盒指的是盒子是可视的，你清楚盒子内部的东西以及里面是如何运作的。”白盒”法全面了解程序内部逻辑结构、对所有逻辑路径进行测试。”白盒”法是穷举路径测试。在使用这一方案时，测试者必须检查程序的内部结构，从检查程序的逻辑着手，得出测试数据。贯穿程序的独立路径数是天文数字</p>
+<p>白盒测试常用技术：</p>
+<ul>
+<li>白盒测试的测试方法有代码检查法、静态结构分析法、静态质量度量法、逻辑覆盖法、基本路径测试法、域测试、符号测试、路径覆盖和程序变异。<br>白盒测试法的覆盖标准有逻辑覆盖、循环覆盖和基本路径测试。其中逻辑覆盖包括语句覆盖、判定覆盖、条件覆盖、判定/条件覆盖、条件组合覆盖和路径覆盖。六种覆盖标准发现错误的能力呈由弱到强的变化：<blockquote>
+<ul>
+<li>语句覆盖每条语句至少执行一次。</li>
+<li>判定覆盖每个判定的每个分支至少执行一次。</li>
+<li>条件覆盖每个判定的每个条件应取到各种可能的值。</li>
+<li>判定/条件覆盖同时满足判定覆盖条件覆盖。</li>
+<li>条件组合覆盖每个判定中各条件的每一种组合至少出现一次。</li>
+<li>路径覆盖使程序中每一条可能的路径至少执行一次。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h2 id="7-软件项目估算"><a href="#7-软件项目估算" class="headerlink" title="7. 软件项目估算"></a>7. 软件项目估算</h2><p>未完待续</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/软工复习重点/" rel="tag"># 软工复习重点</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/09/26/page搭建个人博客/" rel="next" title="hexo+git+nginx+阿里云/github page搭建个人博客">
+                <i class="fa fa-chevron-left"></i> hexo+git+nginx+阿里云/github page搭建个人博客
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/10/23/软工考试复习-1/" rel="prev" title="软工考试复习-1">
+                软工考试复习-1 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTkyNi8xNjQ1Mw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">白衣饮茶</p>
+              <p class="site-description motion-element" itemprop="description">醉里论道，醒时折花</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Lucky1135" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/1135142320" target="_blank" title="QQ空间">
+                      
+                        <i class="fa fa-fw fa-globe"></i>QQ空间</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ai-guo-yike-bao-bao-cai/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#软件工程基础知识"><span class="nav-number">1.</span> <span class="nav-text">软件工程基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#0-软件工程学的范畴"><span class="nav-number">1.1.</span> <span class="nav-text">0. 软件工程学的范畴</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-软件工程7条基本原理"><span class="nav-number">1.2.</span> <span class="nav-text">1. 软件工程7条基本原理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-软件生存周期"><span class="nav-number">1.3.</span> <span class="nav-text">2. 软件生存周期</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-软件过程"><span class="nav-number">1.4.</span> <span class="nav-text">3. 软件过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-软件过程模型"><span class="nav-number">1.5.</span> <span class="nav-text">4. 软件过程模型</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#5-需求分析"><span class="nav-number">1.6.</span> <span class="nav-text">5. 需求分析</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-系统测试"><span class="nav-number">1.7.</span> <span class="nav-text">6. 系统测试</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#0-传统软件的测试策略"><span class="nav-number">1.7.1.</span> <span class="nav-text">0. 传统软件的测试策略</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#1-测试面向对象软件"><span class="nav-number">1.7.2.</span> <span class="nav-text">1. 测试面向对象软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-测试方法"><span class="nav-number">1.7.3.</span> <span class="nav-text">2.测试方法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#黑盒测试"><span class="nav-number">1.7.3.1.</span> <span class="nav-text">黑盒测试</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#白盒测试"><span class="nav-number">1.7.3.2.</span> <span class="nav-text">白盒测试</span></a></li></ol></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#7-软件项目估算"><span class="nav-number">1.8.</span> <span class="nav-text">7. 软件项目估算</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+      <div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2433446713&auto=1&height=430"></iframe>
+      </div>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白衣饮茶</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '4rsWuOlVybLa9esvaAqQ82ks-gzGzoHsz',
+        appKey: 'HSOjk3GH6VhzlTnKO4dO0Sks',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":true},"log":false});</script></body>
+</html>

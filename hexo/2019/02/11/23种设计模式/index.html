@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="高级架构师," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="设计模式详解总的来说设计模式分为三大类： 创建型（共5种）： 工厂方法模式 抽象工厂模式 单例模式">
+<meta name="keywords" content="高级架构师">
+<meta property="og:type" content="article">
+<meta property="og:title" content="23种设计模式">
+<meta property="og:url" content="http://www.youknew.cn/2019/02/11/23种设计模式/index.html">
+<meta property="og:site_name" content="白衣饮茶">
+<meta property="og:description" content="设计模式详解总的来说设计模式分为三大类： 创建型（共5种）： 工厂方法模式 抽象工厂模式 单例模式">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-02-26T01:29:26.969Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="23种设计模式">
+<meta name="twitter:description" content="设计模式详解总的来说设计模式分为三大类： 创建型（共5种）： 工厂方法模式 抽象工厂模式 单例模式">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.youknew.cn/2019/02/11/23种设计模式/"/>
+
+
+
+
+
+  <title>23种设计模式 | 白衣饮茶</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">白衣饮茶</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.youknew.cn/2019/02/11/23种设计模式/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="白衣饮茶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白衣饮茶">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">23种设计模式</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-11T12:40:42+08:00">
+                2019-02-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/11/23种设计模式/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/11/23种设计模式/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="设计模式详解"><a href="#设计模式详解" class="headerlink" title="设计模式详解"></a>设计模式详解</h1><p>总的来说设计模式分为三大类：</p>
+<h2 id="创建型（共5种）："><a href="#创建型（共5种）：" class="headerlink" title="创建型（共5种）："></a>创建型（共5种）：</h2><ul>
+<li><a href="http://c.biancheng.net/view/1348.html" target="_blank" rel="noopener">工厂方法模式</a></li>
+<li><a href="http://c.biancheng.net/view/1351.html" target="_blank" rel="noopener">抽象工厂模式</a></li>
+<li><a href="http://c.biancheng.net/view/1338.html" target="_blank" rel="noopener">单例模式</a><a id="more"></a></li>
+<li><a href="http://c.biancheng.net/view/1354.html" target="_blank" rel="noopener">建造者模式</a></li>
+<li><a href="http://c.biancheng.net/view/1343.html" target="_blank" rel="noopener">原型模式</a></li>
+</ul>
+<h2 id="结构型模式（共7种）："><a href="#结构型模式（共7种）：" class="headerlink" title="结构型模式（共7种）："></a>结构型模式（共7种）：</h2><ul>
+<li><a href="http://c.biancheng.net/view/1361.html" target="_blank" rel="noopener">适配器模式</a></li>
+<li><a href="http://c.biancheng.net/view/1366.html" target="_blank" rel="noopener">装饰器模式</a></li>
+<li><a href="http://c.biancheng.net/view/1359.html" target="_blank" rel="noopener">代理模式</a></li>
+<li><a href="http://c.biancheng.net/view/1369.html" target="_blank" rel="noopener">外观模式</a></li>
+<li><a href="http://c.biancheng.net/view/1364.html" target="_blank" rel="noopener">桥接模式</a></li>
+<li><a href="http://c.biancheng.net/view/1373.html" target="_blank" rel="noopener">组合模式</a></li>
+<li><a href="http://c.biancheng.net/view/1371.html" target="_blank" rel="noopener">享元模式</a></li>
+</ul>
+<h2 id="行为型模式（共11种）："><a href="#行为型模式（共11种）：" class="headerlink" title="行为型模式（共11种）："></a>行为型模式（共11种）：</h2><ul>
+<li><a href="http://c.biancheng.net/view/1378.html" target="_blank" rel="noopener">策略模式</a></li>
+<li><a href="http://c.biancheng.net/view/1376.html" target="_blank" rel="noopener">模板方法模式</a></li>
+<li><a href="http://c.biancheng.net/view/1390.html" target="_blank" rel="noopener">观察者模式</a></li>
+<li><a href="http://c.biancheng.net/view/1395.html" target="_blank" rel="noopener">迭代子模式</a></li>
+<li><a href="http://c.biancheng.net/view/1383.html" target="_blank" rel="noopener">责任链模式</a></li>
+<li><a href="http://c.biancheng.net/view/1380.html" target="_blank" rel="noopener">命令模式</a></li>
+<li><a href="http://c.biancheng.net/view/1400.html" target="_blank" rel="noopener">备忘录模式</a></li>
+<li><a href="http://c.biancheng.net/view/1388.html" target="_blank" rel="noopener">状态模式</a></li>
+<li><a href="http://c.biancheng.net/view/1397.html" target="_blank" rel="noopener">访问者模式</a></li>
+<li><a href="http://c.biancheng.net/view/1393.html" target="_blank" rel="noopener">中介者模式</a></li>
+<li><a href="http://c.biancheng.net/view/1402.html" target="_blank" rel="noopener">解释器模式</a></li>
+</ul>
+<hr>
+<h1 id="设计模式七大原则"><a href="#设计模式七大原则" class="headerlink" title="设计模式七大原则"></a>设计模式七大原则</h1><ul>
+<li><p>开闭原则（总原则）</p>
+<blockquote>
+<ul>
+<li>定义：一个软件实体应当对扩展开放，对修改关闭。也就是说在设计一个模块的时候，应当使这个模块可以在不被修改的前提下被扩展，即实现在不修改源代码的情况下改变这个模块的行为。</li>
+<li>分析：<ol>
+<li>开闭原则由Bertrand Meyer于1988年提出，它是面向对象设计中最重要的原则之一。</li>
+<li>在开闭原则的定义中，软件实体可以指一个软件模块、一个由多个类组成的局部结构或一个独立的类。</li>
+<li>抽象化是开闭原则的关键。</li>
+<li>开闭原则还可以通过一个更加具体的“对可变性封装原则”来描述，对可变性封装原则(Principle of Encapsulation of Variation,EVP)要求找到系统的可变因素并将其封装起来。</li>
+</ol>
+</li>
+<li>总结： 面对需求，对程序的改动是通过增加新代码进行的，而不是改变原来的代码。</li>
+</ul>
+</blockquote>
+</li>
+<li><p>单一原则</p>
+<blockquote>
+<ul>
+<li>定义：<ol>
+<li>一个对象应该只包含单一的职责，并且该职责被完整地封装在一个类中。</li>
+<li>就一个类而言，应该仅有一个引起它变化的原因。</li>
+</ol>
+</li>
+<li>分析：<ol>
+<li>一个类（或者大到模块，小到方法）承担的职责越多，它被复用的可能性越小，而且如果一个类承担的职责过多，就相当于将这些职责耦合在一起，当其中一个职责变化时，可能会影响其他职责的运作。</li>
+<li>类的职责主要包括两个方面：数据职责和行为职责，数据职责通过其属性来体现，而行为职责通过其方法来体现。</li>
+<li>单一职责原则是实现高内聚、低耦合的指导方针，在很多代码重构手法中都能找到它的存在，它是最简单但又最难运用的原则，需要设计人员发现类的不同职责并将其分离，而发现类的多重职责需要设计人员具有较强的分析设计能力和相关重构经验。 </li>
+</ol>
+</li>
+<li>总结：就一个类而言，应该仅有一个引起它变化的原因。</li>
+</ul>
+</blockquote>
+</li>
+<li>里氏替换<blockquote>
+<ul>
+<li>定义:继承必须确保超类所拥有的性质在子类中仍然成立。”也就是说，当一个子类的实例应该能够替换任何其超类的实例时，它们之间才具有is-A关系。</li>
+<li>分析： <ol>
+<li>里氏替换原则是实现开闭原则的重要方式之一。</li>
+<li>它克服了继承中重写父类造成的可复用性变差的缺点。</li>
+<li>它是动作正确性的保证。即类的扩展不会给已有的系统引入新的错误，降低了代码出错的可能性。</li>
+</ol>
+</li>
+<li>总结：实现“开-闭”原则的关键步骤就是抽象化。而基类与子类的继承关系就是抽象化的具体实现，所以里氏代换原则是对实现抽象化的具体步骤的规范。</li>
+</ul>
+</blockquote>
+</li>
+<li>依赖倒置<blockquote>
+<ul>
+<li>定义：高层模块不应该依赖低层模块，两者都应该依赖其抽象；抽象不应该依赖细节，细节应该依赖抽象</li>
+<li>分析：<ol>
+<li>依赖倒置原则可以降低类间的耦合性。</li>
+<li>依赖倒置原则可以提高系统的稳定性。</li>
+<li>依赖倒置原则可以减少并行开发引起的风险。</li>
+<li>依赖倒置原则可以提高代码的可读性和可维护性。</li>
+</ol>
+</li>
+<li>总结：其核心思想是：要面向接口编程，不要面向实现编程。依赖倒置原则的目的是通过要面向接口的编程来降低类间的耦合性</li>
+</ul>
+</blockquote>
+</li>
+<li>接口隔离<blockquote>
+<ul>
+<li>定义：<ol>
+<li>客户端不应该被迫依赖于它不使用的方法。–2002 年罗伯特·C.马丁</li>
+<li>一个类对另一个类的依赖应该建立在最小的接口上</li>
+</ol>
+</li>
+<li>分析：<ol>
+<li>接口隔离原则和单一职责都是为了提高类的内聚性、降低它们之间的耦合性，体现了封装的思想，但两者不同的：单一职责原则注重的是职责，而接口隔离原则注重的是对接口依赖的隔离。单一职责原则主要是约束类，它针对的是程序中的实现和细节；接口隔离原则主要约束接口，主要针对抽象和程序整体框架的构建。</li>
+<li>接口隔离原则是为了约束接口、降低类对接口的依赖性，遵循接口隔离原则有以下 5 个优点。<ul>
+<li>将臃肿庞大的接口分解为多个粒度小的接口，可以预防外来变更的扩散，提高系统的灵活性和可维护性。</li>
+<li>接口隔离提高了系统的内聚性，减少了对外交互，降低了系统的耦合性。</li>
+<li>如果接口的粒度大小定义合理，能够保证系统的稳定性；但是，如果定义过小，则会造成接口数量过多设计复杂化；如果定义太大，灵活性降低，无法提供定制服务，给整体项目带来无法预料的风险。</li>
+<li>使用多个专门的接口还能够体现对象的层次，因为可以通过接口的继承，实现对总接口的定义。</li>
+<li>能减少项目工程中的代码冗余。过大的大接口里面通常放置许多不用的方法，当实现这个接口的时候，被迫设计冗余的代码。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>总结：每个接口中不存在子类用不到却必须实现的方法，如果不然，就要将接口拆分。</li>
+</ul>
+</blockquote>
+</li>
+<li>迪米特原则<blockquote>
+<ul>
+<li>定义：只与你的直接朋友交谈，不跟“陌生人”说话。其含义是：如果两个软件实体无须直接通信，那么就不应当发生直接的相互调用，可以通过第三方转发该调用。其目的是降低类之间的耦合度，提高模块的相对独立性。(迪米特法则中的“朋友”是指：当前对象本身、当前对象的成员对象、当前对象所创建的对象、当前对象的方法参数等，这些对象同当前对象存在关联、聚合或组合关系，可以直接访问这些对象的方法)。</li>
+<li>分析：<ol>
+<li>迪米特法则要求限制软件实体之间通信的宽度和深度，正确使用迪米特法则将有以下两个优点。<ul>
+<li>降低了类之间的耦合度，提高了模块的相对独立性。</li>
+<li>由于亲合度降低，从而提高了类的可复用率和系统的扩展性。</li>
+</ul>
+</li>
+<li>但是，过度使用迪米特法则会使系统产生大量的中介类，从而增加系统的复杂性，使模块之间的通信效率降低。所以，在釆用迪米特法则时需要反复权衡，确保高内聚和低耦合的同时，保证系统的结构清晰。</li>
+</ol>
+</li>
+<li>总结：一个类对自己依赖的类知道的越少越好。也就是说无论被依赖的类多么复杂，都应该将逻辑封装在方法的内部，通过public方法提供给外部。这样当被依赖的类变化时，才能最小的影响该类。</li>
+</ul>
+</blockquote>
+</li>
+<li>合成复用<blockquote>
+<ul>
+<li>定义：又叫组合/聚合复用原则。它要求在软件复用时，要尽量先使用组合或者聚合等关联关系来实现，其次才考虑使用继承关系来实现。如果要使用继承关系，则必须严格遵循里氏替换原则。合成复用原则同里氏替换原则相辅相成的，两者都是开闭原则的具体实现规范。</li>
+<li>分析：<ol>
+<li>通常类的复用分为继承复用和合成复用两种，继承复用虽然有简单和易实现的优点，但它也存在以下缺点。<ul>
+<li>继承复用破坏了类的封装性。因为继承会将父类的实现细节暴露给子类，父类对子类是透明的，所以这种复用又称为“白箱”复用。</li>
+<li>子类与父类的耦合度高。父类的实现的任何改变都会导致子类的实现发生变化，这不利于类的扩展与维护。</li>
+<li>它限制了复用的灵活性。从父类继承而来的实现是静态的，在编译时已经定义，所以在运行时不可能发生变化。</li>
+</ul>
+</li>
+<li>采用组合或聚合复用时，可以将已有对象纳入新对象中，使之成为新对象的一部分，新对象可以调用已有对象的功能，它有以下优点。<ul>
+<li>它维持了类的封装性。因为成分对象的内部细节是新对象看不见的，所以这种复用又称为“黑箱”复用。</li>
+<li>新旧类之间的耦合度低。这种复用所需的依赖较少，新对象存取成分对象的唯一方法是通过成分对象的接口。</li>
+<li>复用的灵活性高。这种复用可以在运行时动态进行，新对象可以动态地引用与成分对象类型相同的对象。</li>
+</ul>
+</li>
+</ol>
+</li>
+<li>总结：尽量首先使用合成/聚合的方式，而不是使用继承。</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<hr>
+<h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><ul>
+<li><a href="https://www.cnblogs.com/geek6/p/3951677.html" target="_blank" rel="noopener">博客园 23种设计模式全解析</a></li>
+<li><a href="http://c.biancheng.net/design_pattern/" target="_blank" rel="noopener">C语言中文网 Java设计模式：23种设计模式全面解析（超级详细）</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/高级架构师/" rel="tag"># 高级架构师</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/22/11-23演讲稿/" rel="next" title="11.23演讲稿">
+                <i class="fa fa-chevron-left"></i> 11.23演讲稿
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/27/IDE常用快捷键/" rel="prev" title="IDE常用快捷键">
+                IDE常用快捷键 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTkyNi8xNjQ1Mw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">白衣饮茶</p>
+              <p class="site-description motion-element" itemprop="description">醉里论道，醒时折花</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Lucky1135" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/1135142320" target="_blank" title="QQ空间">
+                      
+                        <i class="fa fa-fw fa-globe"></i>QQ空间</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ai-guo-yike-bao-bao-cai/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式详解"><span class="nav-number">1.</span> <span class="nav-text">设计模式详解</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建型（共5种）："><span class="nav-number">1.1.</span> <span class="nav-text">创建型（共5种）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结构型模式（共7种）："><span class="nav-number">1.2.</span> <span class="nav-text">结构型模式（共7种）：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#行为型模式（共11种）："><span class="nav-number">1.3.</span> <span class="nav-text">行为型模式（共11种）：</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#设计模式七大原则"><span class="nav-number">2.</span> <span class="nav-text">设计模式七大原则</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#参考资料"><span class="nav-number">3.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+      <div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2433446713&auto=1&height=430"></iframe>
+      </div>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白衣饮茶</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '4rsWuOlVybLa9esvaAqQ82ks-gzGzoHsz',
+        appKey: 'HSOjk3GH6VhzlTnKO4dO0Sks',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":true},"log":false});</script></body>
+</html>

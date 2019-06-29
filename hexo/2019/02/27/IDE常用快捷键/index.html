@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="学习," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="IDE常用快捷键整理IDEA Alt+回车 导入包,自动修正 Ctrl+N  查找类 Ctrl+Shift+N 查找文件 Ctrl+Alt+L  格式化代码 Ctrl+Alt+O 优化导入的类和包 Alt+Insert 生成代码(如get,set方法,构造函数等) Ctrl+E或者Alt+Shift+C  最近更改的代码 Ctrl+R 替换文本 Ctrl+F 查找文本">
+<meta name="keywords" content="学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="IDE常用快捷键">
+<meta property="og:url" content="http://www.youknew.cn/2019/02/27/IDE常用快捷键/index.html">
+<meta property="og:site_name" content="白衣饮茶">
+<meta property="og:description" content="IDE常用快捷键整理IDEA Alt+回车 导入包,自动修正 Ctrl+N  查找类 Ctrl+Shift+N 查找文件 Ctrl+Alt+L  格式化代码 Ctrl+Alt+O 优化导入的类和包 Alt+Insert 生成代码(如get,set方法,构造函数等) Ctrl+E或者Alt+Shift+C  最近更改的代码 Ctrl+R 替换文本 Ctrl+F 查找文本">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-03-04T06:15:44.940Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="IDE常用快捷键">
+<meta name="twitter:description" content="IDE常用快捷键整理IDEA Alt+回车 导入包,自动修正 Ctrl+N  查找类 Ctrl+Shift+N 查找文件 Ctrl+Alt+L  格式化代码 Ctrl+Alt+O 优化导入的类和包 Alt+Insert 生成代码(如get,set方法,构造函数等) Ctrl+E或者Alt+Shift+C  最近更改的代码 Ctrl+R 替换文本 Ctrl+F 查找文本">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.youknew.cn/2019/02/27/IDE常用快捷键/"/>
+
+
+
+
+
+  <title>IDE常用快捷键 | 白衣饮茶</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">白衣饮茶</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.youknew.cn/2019/02/27/IDE常用快捷键/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="白衣饮茶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白衣饮茶">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">IDE常用快捷键</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-02-27T14:52:49+08:00">
+                2019-02-27
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/整理/" itemprop="url" rel="index">
+                    <span itemprop="name">整理</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/02/27/IDE常用快捷键/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/02/27/IDE常用快捷键/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="IDE常用快捷键整理"><a href="#IDE常用快捷键整理" class="headerlink" title="IDE常用快捷键整理"></a>IDE常用快捷键整理</h1><h2 id="IDEA"><a href="#IDEA" class="headerlink" title="IDEA"></a>IDEA</h2><ul>
+<li>Alt+回车 导入包,自动修正</li>
+<li>Ctrl+N  查找类</li>
+<li>Ctrl+Shift+N 查找文件</li>
+<li>Ctrl+Alt+L  格式化代码</li>
+<li>Ctrl+Alt+O 优化导入的类和包</li>
+<li>Alt+Insert 生成代码(如get,set方法,构造函数等)</li>
+<li>Ctrl+E或者Alt+Shift+C  最近更改的代码</li>
+<li>Ctrl+R 替换文本</li>
+<li>Ctrl+F 查找文本<a id="more"></a></li>
+<li>Ctrl+Shift+Space 自动补全代码</li>
+<li>Ctrl+空格 代码提示</li>
+<li>Ctrl+Alt+Space 类名或接口名提示</li>
+<li>Ctrl+P 方法参数提示</li>
+<li>Ctrl+Shift+Alt+N 查找类中的方法或变量</li>
+<li><p>Alt+Shift+C 对比最近修改的代码</p>
+</li>
+<li><p>Shift+F6  重构-重命名</p>
+</li>
+<li>Ctrl+Shift+先上键</li>
+<li>Ctrl+X 删除行</li>
+<li>Ctrl+D 复制行</li>
+<li>Ctrl+/ 或 Ctrl+Shift+/  注释（// 或者/<em>.  .  .  </em>/ ）</li>
+<li>Ctrl+J  自动代码</li>
+<li>Ctrl+E 最近打开的文件</li>
+<li>Ctrl+H 显示类结构图</li>
+<li>Ctrl+Q 显示注释文档</li>
+<li>Alt+F1 查找代码所在位置</li>
+<li>Alt+1 快速打开或隐藏工程面板</li>
+<li>Ctrl+Alt+ left/right 返回至上次浏览的位置</li>
+<li>Alt+ left/right 切换代码视图</li>
+<li>Alt+ Up/Down 在方法间快速移动定位</li>
+<li>Ctrl+Shift+Up/Down 代码向上/下移动。</li>
+<li><p>F2 或Shift+F2 高亮错误或警告快速定位</p>
+</li>
+<li><p>代码标签输入完成后，按Tab，生成代码。</p>
+</li>
+<li>选中文本，按Ctrl+Shift+F7 ，高亮显示所有该文本，按Esc高亮消失。</li>
+<li>Ctrl+W 选中代码，连续按会有其他效果</li>
+<li>选中文本，按Alt+F3 ，逐个往下查找相同文本，并高亮显示。</li>
+<li>Ctrl+Up/Down 光标跳转到第一行或最后一行下</li>
+<li>Ctrl+B 快速打开光标处的类或方法</li>
+</ul>
+<p><strong><em>最常用快捷键</em></strong></p>
+<ol>
+<li>Ctrl＋E，可以显示最近编辑的文件列表</li>
+<li>Shift＋Click可以关闭文件</li>
+<li>Ctrl＋[或]可以跳到大括号的开头结尾</li>
+<li>Ctrl＋Shift＋Backspace可以跳转到上次编辑的地方</li>
+<li>Ctrl＋F12，可以显示当前文件的结构</li>
+<li>Ctrl＋F7可以查询当前元素在当前文件中的引用，然后按F3可以选择</li>
+<li>Ctrl＋N，可以快速打开类</li>
+<li>Ctrl＋Shift＋N，可以快速打开文件</li>
+<li>Alt＋Q可以看到当前方法的声明</li>
+<li>Ctrl＋W可以选择单词继而语句继而行继而函数</li>
+<li>Alt＋F1可以将正在编辑的元素在各个面板中定位</li>
+<li>Ctrl＋P，可以显示参数信息</li>
+<li>Ctrl＋Shift＋Insert可以选择剪贴板内容并插入</li>
+<li>Alt＋Insert可以生成构造器/Getter/Setter等</li>
+<li>Ctrl＋Alt＋V 可以引入变量。例如把括号内的SQL赋成一个变量</li>
+<li>Ctrl＋Alt＋T可以把代码包在一块内，例如try/catch</li>
+<li>Alt＋Up and Alt＋Down可在方法间快速移动<br>下面的不是很有用</li>
+<li>在一些地方按Alt＋Enter可以得到一些Intention Action，例如将”==”改为”equals()”</li>
+<li>Ctrl＋Shift＋Alt＋N可以快速打开符号</li>
+<li>Ctrl＋Shift＋Space在很多时候都能够给出Smart提示</li>
+<li>Alt＋F3可以快速寻找</li>
+<li>Ctrl＋/和Ctrl＋Shift＋/可以注释代码</li>
+<li>Ctrl＋Alt＋B可以跳转到抽象方法的实现</li>
+<li>Ctrl＋O可以选择父类的方法进行重写</li>
+<li>Ctrl＋Q可以看JavaDoc</li>
+<li>Ctrl＋Alt＋Space是类名自动完成</li>
+<li>快速打开类/文件/符号时，可以使用通配符，也可以使用缩写</li>
+<li>Live Templates! Ctrl＋J</li>
+<li>Ctrl＋Shift＋F7可以高亮当前元素在当前文件中的使用</li>
+<li>Ctrl＋Alt＋Up /Ctrl＋Alt＋Down可以快速跳转搜索结果</li>
+<li>Ctrl＋Shift＋J可以整合两行</li>
+<li>Alt＋F8是计算变量值</li>
+</ol>
+<p><strong><em>IntelliJ IDEA使用技巧一览表</em></strong></p>
+<p>在使用 InelliJ IDEA 的过程中，通过查找资料以及一些自己的摸索，发现这个众多 Java 程序员喜欢的 IDE 里有许多值得一提的小窍门，如果能熟练的将它们应用于实际开发过程中，相信它会大大节省你的开发时间，而且随之而来的还会有那么一点点成就感：） Try it ！</p>
+<ol>
+<li>写代码时用 Alt-Insert （ Code|Generate… ）可以创建类里面任何字段的 getter 与 setter 方法。  &lt;?xml:namespace prefix = v ns = “urn:schemas-microsoft-com:vml” /&gt;</li>
+</ol>
+<ol start="2">
+<li>右键点击断点标记（在文本的左边栏里）激活速查菜单，你可以快速设置 enable/disable 断点或者条件它的属性。 </li>
+</ol>
+<ol start="3">
+<li>CodeCompletion （代码完成）属性里的一个特殊的变量是，激活 Ctrl-Alt-Space 可以完成在或不在当前文件里的类名。如果类没有引入则 import 标志会自动创建。</li>
+</ol>
+<ol start="4">
+<li><p>使用 Ctrl-Shift-V 快捷键可以将最近使用的剪贴板内容选择插入到文本。使用时系统会弹出一个含有剪贴内容的对话框，从中你可以选择你要粘贴的部分。</p>
+</li>
+<li><p>利用 CodeCompletion （代码完成）属性可以快速地在代码中完成各种不同地语句，方法是先键入一个类名地前几个字母然后再用 Ctrl-Space 完成全称。如果有多个选项，它们会列在速查列表里。</p>
+</li>
+<li><p>用 Ctrl-/ 与 Ctrl-Shift-/ 来注释 / 反注释代码行与代码块。<br>-/ 用单行注释标记（“ //… ”）来注释 / 反注释当前行或者选择地代码块。而 Ctrl-Shift-/ 则可以用块注释标记（“ /<em>…</em>/ ”）把所选块包围起来。要反注释一个代码块就在块中任何一个地方按 Ctrl-Shift-/ 即可。</p>
+</li>
+<li><p>按 Alt-Q （ View|Context Info ）可以不需要移动代码就能查看当前方法地声明。连续按两次会显示当前所编辑的类名。</p>
+</li>
+<li><p>使用 Refactor|Copy Class… 可以创建一个所选择的类的“副本”。这一点很有用，比如，在你想要创建一个大部分内容都和已存在类相同的类时。</p>
+</li>
+<li><p>在编辑器里 Ctrl-D 可以复制选择的块或者没有所选块是的当前行。</p>
+</li>
+<li><p>Ctrl-W （选择字）在编辑器里的功能是先选择脱字符处的单词，然后选择源代码的扩展区域。举例来说，先选择一个方法名，然后是调用这个方法的表达式，然后是整个语句，然后包容块，等等。</p>
+</li>
+<li><p>如果你不想让指示事件细节的“亮球”图标在编辑器上显示，通过按 Alt-Enter 组合键打开所有事件列表然后用鼠标点击它就可以把这个事件文本附件的亮球置成非活动状态。<br>这样以后就不会有指示特殊事件的亮球出现了，但是你仍然可以用 Alt-Enter 快捷键使用它。</p>
+</li>
+<li><p>在使用 CodeCompletion 时，可以用逗点（ .   ）字符，逗号（，）分号（；），空格和其它字符输入弹出列表里的当前高亮部分。选择的名字会随着输入的字符自动输入到编辑器里。</p>
+</li>
+<li><p>在任何工具窗口里使用 Escape 键都可以把焦点移到编辑器上。<br>Shift-Escape 不仅可以把焦点移到编辑器上而且还可以隐藏当前（或最后活动的）工具窗口。<br>F12 键把焦点从编辑器移到最近使用的工具窗口。</p>
+</li>
+<li><p>在调试程序时查看任何表达式值的一个容易的方法就是在编辑器中选择文本（可以按几次 Ctrl-W 组合键更有效地执行这个操作）然后按 Alt-F8 。</p>
+</li>
+<li><p>要打开编辑器脱字符处使用的类或者方法 Java 文档的浏览器，就按 Shift-F1 （右键菜单的 External JavaDoc ）。<br>要使用这个功能须要把加入浏览器的路径，在“ General ”选项中设置（ Options | IDE Settings ），另外还要把创建的 Java 文档加入到工程中（ File | Project Properties ）。</p>
+</li>
+<li><p>用 Ctrl-F12 （ View | File Structure Popup ）键你可以在当前编辑的文件中快速导航。 这时它会显示当前类的成员列表。选中一个要导航的元素然后按 Enter 键或 F4 键。要轻松地定位到列表中的一个条目，只需键入它的名字即可。</p>
+</li>
+<li><p>在代码中把光标置于标记符或者它的检查点上再按 Alt-F7 （右键菜单中的 Find Usages… ）会很快地查找到在整个工程中使用地某一个类、方法或者变量的位置。</p>
+</li>
+<li><p>按 Ctrl-N （ Go to | Class… ）再键入类的名字可以快速地在编辑器里打开任何一个类。从显示出来的下拉列表里选择类。<br>同样的方法你可以通过使用 Ctrl-Shift-N （ Go to | File… ）打开工程中的非 Java 文件。</p>
+</li>
+<li><p>要导航代码中一些地方使用到的类、方法或者变量的声明，把光标放在查看项上再按 Ctrl-B 即可。也可以通过按 Ctrl 键的同时在查看点上单击鼠标键调转到声明处。</p>
+</li>
+<li><p>把光标放到查看点上再按 Ctrl-Alt-B 可以导航到一个抽象方法的实现代码。</p>
+</li>
+<li><p>要看一个所选择的类的继承层次，按 Ctrl-H （ Browse Type Hierarchy ）即可。也可以激活编辑器中的继承关系视图查看当前编辑类的继承关系。22.   使用 Ctrl-Shift-F7 （ Search | Highlight Usages in File ）可以快速高亮显示当前文件中某一变量的使用地方。按 Escape 清除高亮显示。</p>
+</li>
+<li><p>用 Alt-F3 （ Search | Incremental Search ）在编辑器中实现快速查查找功能。<br>在“ Search for: ”提示工具里输入字符，使用箭头键朝前和朝后搜索。按 Escape 退出。</p>
+</li>
+<li><p>按 Ctrl-J 组合键来执行一些你记不起来的 Live Template 缩写。比如，键“ it ”然后按 Ctrl-J 看看有什么发生。</p>
+</li>
+<li><p>Introduce Variable 整合帮助你简化代码中复杂的声明。举个例子，在下面的代码片断里，在代码中选择一个表达式：然后按 Ctrl-Alt-V 。</p>
+</li>
+<li><p>Ctrl-Shift-J 快捷键把两行合成一行并把不必要的空格去掉以匹配你的代码格式。</p>
+</li>
+<li><p>Ctrl-Shift-Backspace （ Go to | Last Edit Location ）让你调转到代码中所做改变的最后一个地方。<br>多按几次 Ctrl-Shift-Backspace 查看更深的修改历史。</p>
+</li>
+<li><p>用 Tools | Reformat Code… 根据你的代码样式参考（查看 Options | IDE Setting | Code Style ）格式化代码。<br>使用 Tools | Optimize Imports… 可以根据设置（查看 Options | IDE Setting | Code Style | Imports ）自动“优化” imports （清除无用的 imports 等）。</p>
+</li>
+<li><p>使用 IDEA 的 Live Templates | Live Templates 让你在眨眼间创建许多典型代码。比如，在一个方法里键入。再按 Tab 键看有什么事情发生了。<br>用 Tab 键在不同的模板域内移动。查看 Options | Live Templates 获取更多的细节。</p>
+</li>
+<li><p>要查看一个文件中修改的本地历史，激活右键菜单里的 Local VCS | Show History… 。也许你可以导航不同的文件版本，看看它们的不同之处再回滚到以前的任何一个版本吧。 使用同样的右键菜单条目还可以看到一个目录里修改的历史。有了这个特性你就不会丢失任何代码了。</p>
+</li>
+<li><p>如果要了解主菜单里每一个条目的用途，把鼠标指针移到菜单条目上再应用程序框架的底部的状态栏里就会显示它们的一些简短描述，也许会对你有帮助。</p>
+</li>
+<li><p>要在编辑器里显示方法间的分隔线，打开 Options | IDE Settings | Editor ，选中“ Show method separators ”检查盒（ checkbox ）。</p>
+</li>
+<li><p>用 Alt-Up 和 Alt-Down 键可以在编辑器里不同的方法之间快速移动。</p>
+</li>
+<li><p>用 F2/Shift-F2 键在高亮显示的语法错误间跳转。用 Ctrl-Alt-Down/Ctrl-Alt-Up 快捷键则可以在编译器错误信息或者查找操作结果间跳转。</p>
+</li>
+<li><p>通过按 Ctrl-O （ Code | Override Methods… ）可以很容易地重载基本类地方法。要完成当前类 implements 的（或者抽象基本类的）接口的方法，就使用 Ctrl-I （ Code | Implement Methods… ）。</p>
+</li>
+<li><p>如果光标置于一个方法调用的括号间，按 Ctrl-P 会显示一个可用参数的列表。</p>
+</li>
+<li><p>要快速查看编辑器脱字符处使用的类或方法的 Java 文档，按 Ctrl-Q （在弹出菜单的 Show Quick JavaDoc 里）即可。</p>
+</li>
+<li><p>像 Ctrl-Q （ Show Quick JavaDoc 显示简洁 Java 文档）， Ctrl-P （ Show Parameter Info 显示参数信息）， Ctrl-B （ Go to Declaration 跳转到声明）， Shift-F1 （ External JavaDoc 外部 Java 文档）以及其它一些快捷键不仅可以在编辑器里使用，也可以应用在代码完成右键列表里。</p>
+</li>
+<li><p>Ctrl-E （ View | Recent Files ）弹出最近访问的文件右键列表。选中文件按 Enter 键打开。</p>
+</li>
+<li><p>在 IDEA 中可以很容易地对你的类，方法以及变量进行重命名并在所有使用到它们的地方自动更正。试一下，把编辑器脱字符置于任何一个变量名字上然后按 Shift-F6 （ Refactor | Rename… ）。在对话框里键入要显示地新名字再按 Enter 。你会浏览到使用这个变量地所有地方然后按“ Do Refactor ”按钮结束重命名操作。</p>
+</li>
+<li><p>要在任何视图（ Project View 工程视图， Structure View 结构视图或者其它视图）里快速选择当前编辑地部分（类，文件，方法或者字段），按 Alt-F1 （ View | Select in… ）。</p>
+</li>
+<li><p>在“ new ”字符后实例化一个已知类型对象时也许你会用到 SmartType 代码完成这个特性。比如，键入再按 Ctrl-Shift-Space ：</p>
+</li>
+<li><p>通过使用 SmartType 代码完成，在 IDEA 中创建接口的整个匿名 implementation 也是非常容易的，比如，对于一些 listener （监听器），可以键入<br>Component component;<br>component.  addMouseListener(<br>new <caret is="" here=""><br>);</caret></p>
+</li>
+</ol>
+<p>然后再按 Ctrl-Shift-Space 看看有什么发生了。</p>
+<ol start="44">
+<li><p>在你需要设置一个已知类型的表达式的值时用 SmartType 代码完成也很有帮助。比如，键入<br>String s = ( <caret is="" here=""><br>再按 Ctrl-Shift-Space 看看会有什么出现。</caret></p>
+</li>
+<li><p>在所有视图里都提供了速查功能：在树里只需键入字符就可以快速定位到一个条目。</p>
+</li>
+<li><p>当你想用代码片断捕捉异常时，在编辑器里选中这个片断，按 Ctrl-Alt-T （ Code | Surround with… ）然后选择“ try/catch ”。它会自动产生代码片断中抛出的所有异常的捕捉块。在 Options | File Templates | Code tab 中你还可以自己定制产生捕捉块的模板。 用列表中的其它项可以包围别的一些结构。</p>
+</li>
+<li><p>在使用代码完成时，用 Tab 键可以输入弹出列表里的高亮显示部分。 不像用 Enter 键接受输入，这个选中的名字会覆盖掉脱字符右边名字的其它部分。这一点在用一个方法或者变量名替换另一个时特别有用。</p>
+</li>
+<li><p>在声明一个变量时代码完成特性会给你显示一个建议名。比如，开始键入“ private FileOutputStream ”然后按 Ctrl-Space 在 Options | IDE Setting | Code Style 中还可以为本地变量，参数，实例及静态字段定制名字。</p>
+</li>
+</ol>
+<ul>
+<li>参考 <a href="https://www.  cnblogs.  com/JavaBlackHole/p/7673812.  html" target="_blank" rel="noopener">IDEA常用快捷键</a></li>
+</ul>
+<hr>
+<h2 id="VS-Code"><a href="#VS-Code" class="headerlink" title="VS Code"></a>VS Code</h2><h3 id="主命令框"><a href="#主命令框" class="headerlink" title="主命令框"></a>主命令框</h3><p>F1 或 Ctrl+Shift+P: 打开命令面板。在打开的输入框内，可以输入任何命令，例如：</p>
+<p>按一下 Backspace 会进入到 Ctrl+P 模式<br>在 Ctrl+P 下输入 &gt; 可以进入 Ctrl+Shift+P 模式<br>在 Ctrl+P 窗口下还可以:</p>
+<ul>
+<li><p>直接输入文件名，跳转到文件</p>
+</li>
+<li><p>? 列出当前可执行的动作</p>
+</li>
+<li><p>! 显示 Errors或 Warnings，也可以 Ctrl+Shift+M</p>
+</li>
+<li>: 跳转到行数，也可以 Ctrl+G 直接进入</li>
+<li>@ 跳转到 symbol（搜索变量或者函数），也可以 Ctrl+Shift+O 直接进入</li>
+<li>@ 根据分类跳转 symbol，查找属性或函数，也可以 Ctrl+Shift+O 后输入:进入</li>
+<li>根据名字查找 symbol，也可以 Ctrl+T<h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3></li>
+<li>编辑器与窗口管理<ul>
+<li>打开一个新窗口： Ctrl+Shift+N</li>
+<li>关闭窗口： Ctrl+Shift+W</li>
+<li>同时打开多个编辑器（查看多个文件）</li>
+<li>新建文件 Ctrl+N</li>
+<li>文件之间切换 Ctrl+Tab</li>
+<li>切出一个新的编辑器（最多 3 个） Ctrl+\，也可以按住 Ctrl 鼠标点击 Explorer 里的文件名</li>
+<li>左中右 3 个编辑器的快捷键 Ctrl+1 Ctrl+2 Ctrl+3</li>
+<li>3个编辑器之间循环切换 Ctrl+编辑器换位置， Ctrl+k然后按 Left或 Right</li>
+</ul>
+</li>
+<li>代码编辑&amp;格式调整<ul>
+<li>代码行缩进 Ctrl+[ 、 Ctrl+]</li>
+<li>Ctrl+C 、 Ctrl+V 复制或剪切当前行/当前选中内容</li>
+<li>代码格式化： Shift+Alt+F，或 Ctrl+Shift+P 后输入 format code</li>
+<li>上下移动一行： Alt+Up 或 Alt+Down</li>
+<li>向上向下复制一行： Shift+Alt+Up 或 Shift+Alt+Down</li>
+<li>在当前行下边插入一行 Ctrl+Enter</li>
+<li>在当前行上方插入一行 Ctrl+Shift+Enter</li>
+</ul>
+</li>
+<li>光标相关<ul>
+<li>移动到行首： Home</li>
+<li>移动到行尾： End</li>
+<li>移动到文件结尾： Ctrl+End</li>
+<li>移动到文件开头： Ctrl+Home</li>
+<li>移动到定义处： F12</li>
+<li>定义处缩略图：只看一眼而不跳转过去 Alt+F12</li>
+<li>移动到后半个括号： Ctrl+Shift+]</li>
+<li>选择从光标到行尾： Shift+End</li>
+<li>选择从行首到光标处： Shift+Home</li>
+<li>删除光标右侧的所有字： Ctrl+Delete</li>
+<li>扩展/缩小选取范围： Shift+Alt+Left 和 Shift+Alt+Right</li>
+<li>多行编辑(列编辑)：Alt+Shift+鼠标左键，Ctrl+Alt+Down/Up</li>
+<li>同时选中所有匹配： Ctrl+Shift+L</li>
+<li>Ctrl+D 下一个匹配的也被选中 (在 sublime 中是删除当前行，后面自定义快键键中，设置与 Ctrl+Shift+K 互换了)</li>
+<li>回退上一个光标操作： Ctrl+U</li>
+</ul>
+</li>
+<li>重构代码<ul>
+<li>找到所有的引用： Shift+F12</li>
+<li>同时修改本文件中所有匹配的： Ctrl+F12</li>
+<li>重命名：比如要修改一个方法名，可以选中后按 F2，输入新的名字，回车，会发现所有的文件都修改了</li>
+<li>跳转到下一个 Error 或 Warning：当有多个错误时可以按 F8 逐个跳转</li>
+<li>查看 diff： 在 explorer 里选择文件右键 Set file to compare，然后需要对比的文件上右键选择 Compare with file_name_you_chose</li>
+</ul>
+</li>
+<li>查找替换<ul>
+<li>查找 Ctrl+F</li>
+<li>查找替换 Ctrl+H</li>
+<li>整个文件夹中查找 Ctrl+Shift+F</li>
+<li>显示相关</li>
+<li>全屏：F11</li>
+<li>zoomIn/zoomOut：Ctrl +/-</li>
+<li>侧边栏显/隐：Ctrl+B</li>
+<li>显示资源管理器 Ctrl+Shift+E</li>
+<li>显示搜索 Ctrl+Shift+F</li>
+<li>显示 Git Ctrl+Shift+G</li>
+<li>显示 Debug Ctrl+Shift+D</li>
+<li>显示 Output Ctrl+Shift+U</li>
+</ul>
+</li>
+<li>其他<ul>
+<li>自动保存：File -&gt; AutoSave ，或者 Ctrl+Shift+P，输入 auto</li>
+</ul>
+</li>
+<li><p>修改默认快捷键</p>
+<ul>
+<li><p>打开默认键盘快捷方式设置：<br>File -&gt; Preferences -&gt; Keyboard Shortcuts，或者：Alt+F -&gt; p -&gt; k</p>
+</li>
+<li><p>修改 keybindings.  json：</p>
+<pre><code>// Place your key bindings in this file to overwrite the defaults
+[
+// ctrl+space 被切换输入法快捷键占用
+{
+  &quot;key&quot;: &quot;ctrl+alt+space&quot;,
+  &quot;command&quot;: &quot;editor.  action.  triggerSuggest&quot;,
+  &quot;when&quot;: &quot;editorTextFocus&quot;
+},
+// ctrl+d 删除一行
+{
+  &quot;key&quot;: &quot;ctrl+d&quot;,
+  &quot;command&quot;: &quot;editor.  action.  deleteLines&quot;,
+  &quot;when&quot;: &quot;editorTextFocus&quot;
+},
+// 与删除一行的快捷键互换
+{
+  &quot;key&quot;: &quot;ctrl+shift+k&quot;,
+  &quot;command&quot;: &quot;editor.  action.  addSelectionToNextFindMatch&quot;,
+  &quot;when&quot;: &quot;editorFocus&quot;
+},
+// ctrl+shift+/多行注释
+{
+  &quot;key&quot;:&quot;ctrl+shift+/&quot;,
+  &quot;command&quot;: &quot;editor.  action.  blockComment&quot;,
+  &quot;when&quot;: &quot;editorTextFocus&quot;
+},
+// 定制与 sublime 相同的大小写转换快捷键，需安装 TextTransform 插件
+{
+  &quot;key&quot;: &quot;ctrl+k ctrl+u&quot;,
+  &quot;command&quot;: &quot;uppercase&quot;,
+  &quot;when&quot;: &quot;editorTextFocus&quot;
+},
+{
+  &quot;key&quot;: &quot;ctrl+k ctrl+l&quot;,
+  &quot;command&quot;: &quot;lowercase&quot;,
+  &quot;when&quot;: &quot;editorTextFocus&quot;
+}
+]
+</code></pre></li>
+</ul>
+</li>
+<li><p>参考 <a href="https://www.cnblogs.com/bindong/p/6045957.html" target="_blank" rel="noopener">Visual Studio Code 常用快捷键</a></p>
+</li>
+</ul>
+<hr>
+<h2 id="Android-Studio"><a href="#Android-Studio" class="headerlink" title="Android Studio"></a>Android Studio</h2><h3 id="常用快捷键-1"><a href="#常用快捷键-1" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
+<li><p>代码保存 Ctrl + S</p>
+</li>
+<li><p>最大化/最小化代码编辑窗口 Ctrl + Shift + F12</p>
+</li>
+<li>最大化/最小化工具窗口 Ctrl + Shift + 引号</li>
+<li><p>显示/隐藏工具窗口 Alt + 1</p>
+</li>
+<li><p>快速切换方案 Ctrl + `(backquote)</p>
+</li>
+<li><p>打开设置对话框 Ctrl + Alt + S</p>
+</li>
+</ul>
+<h3 id="搜索、导航快捷键"><a href="#搜索、导航快捷键" class="headerlink" title="搜索、导航快捷键"></a>搜索、导航快捷键</h3><ul>
+<li><p>跳转到有错误代码的所在行</p>
+<ul>
+<li>向下查找：F2</li>
+<li>向上查找：Shift + F2</li>
+</ul>
+</li>
+<li><p>跳转到上一个编辑位置 Ctrl + Shift + BackSpace</p>
+</li>
+<li><p>在方法和内部类之间跳转</p>
+<ul>
+<li>向下跳转：Alt + 向下箭头</li>
+<li>向上跳转：Alt + 向上箭头</li>
+</ul>
+</li>
+<li><p>跳转到某一行 Ctrl + G</p>
+</li>
+<li><p>书签</p>
+<ul>
+<li>添加/移除书签（没有标记符）：F11</li>
+<li>添加/移除书签（有标记符）：Ctrl + F11</li>
+<li>显示书签：Shift + F11</li>
+</ul>
+</li>
+<li><p>关闭代码编辑窗口中的文件 Ctrl + F4</p>
+</li>
+<li><p>在Activity文件和布局文件之间进行切换 Ctrl + Alt + Home</p>
+</li>
+<li><p>代码编辑窗口中的文件切换 Ctrl + Tab / Alt + 左右箭头键</p>
+</li>
+<li><p>切换到代码编辑窗口</p>
+<ul>
+<li>直接返回：Esc</li>
+<li>关闭当前窗口然后返回：Shift + Esc</li>
+</ul>
+</li>
+<li><p>切换到工具窗口 F12</p>
+</li>
+<li><p>使文本高亮</p>
+<ul>
+<li>高亮：Ctrl + Shift + F7</li>
+<li>向上查找：Shift + F3</li>
+<li>向下查找：F3</li>
+<li>退出高亮：Esc</li>
+</ul>
+</li>
+<li><p>查看文档信息 Ctrl + Q</p>
+</li>
+<li><p>查看源代码</p>
+<ul>
+<li>键盘操作：Ctrl + B</li>
+<li>鼠标操作：Ctrl + 鼠标左键点击</li>
+</ul>
+</li>
+<li><p>查看文件结构 Ctrl + F12</p>
+</li>
+<li><p>查看最近修改过的文件 Ctrl + Shift + E</p>
+</li>
+<li><p>查看最近打开过的文件 Ctrl + E</p>
+</li>
+<li><p>查找属性或方法 Ctrl + Shift + Alt + N</p>
+</li>
+<li>查找子类 Ctrl + Alt + B</li>
+<li><p>查找父类 Ctrl + U</p>
+</li>
+<li><p>查找类 Ctrl + N</p>
+</li>
+<li><p>查找文件或文件夹 Ctrl + Shift + N</p>
+</li>
+<li><p>查找</p>
+<ul>
+<li>启用查找操作：Ctrl + F</li>
+<li>向下查找：F3</li>
+<li>向上查找：Shift + F3</li>
+</ul>
+</li>
+<li><p>替换 Ctrl + R</p>
+</li>
+<li><p>查找操作 Ctrl + Shift + A</p>
+</li>
+<li><p>全局搜索 连续按两次 Shift</p>
+</li>
+</ul>
+<h3 id="编写代码快捷键"><a href="#编写代码快捷键" class="headerlink" title="编写代码快捷键"></a>编写代码快捷键</h3><ul>
+<li><p>删除行 Ctrl + Y</p>
+</li>
+<li><p>复制行 Ctrl + D</p>
+</li>
+<li>移动行<ul>
+<li>向上移动：Ctrl + Shift + 向上箭头</li>
+<li>向下移动： Ctrl + Shift + 向下箭头</li>
+</ul>
+</li>
+<li><p>合并行 Ctrl + Shift + J</p>
+</li>
+<li><p>添加行注释 Ctrl + /</p>
+</li>
+<li><p>添加块注释 Ctrl + Shift + /</p>
+</li>
+<li><p>删除整个单词 Ctrl + Delete</p>
+</li>
+<li><p>删除整个单词（Ctrl + BackSpace</p>
+</li>
+<li><p>开始新行 Shift + Enter</p>
+</li>
+<li><p>同时修改</p>
+<ul>
+<li>全选：Ctrl + Shift + Alt + J</li>
+<li>逐个选：Alt + J</li>
+<li>逐个取消选择：Shift + Alt + J</li>
+<li>取消所有选择：Esc</li>
+</ul>
+</li>
+<li>块选择模式 Ctrl + Shift + Insert</li>
+<li><p>选择代码块</p>
+<ul>
+<li>扩大选择范围：Ctrl + W</li>
+<li>缩小选择范围：Ctrl + Shift + W</li>
+</ul>
+</li>
+<li><p>折叠/展开代码块</p>
+<ul>
+<li>折叠/展开代码块（部分）：Ctrl + “-“ / Ctrl + “+”</li>
+<li>折叠/展开代码块（全部）: Ctrl + Shift + “-“ / Ctrl + Shift + “+”</li>
+</ul>
+</li>
+<li><p>优化import包 Ctrl + Alt + O</p>
+</li>
+<li><p>格式化代码 Ctrl + Alt + L</p>
+</li>
+<li><p>生成常用方法 Alt + Insert</p>
+</li>
+<li><p>方法重写 Ctrl + O</p>
+</li>
+<li><p>方法重写 Ctrl + I</p>
+</li>
+<li><p>嵌套代码 Ctrl + Alt + T</p>
+</li>
+<li><p>移除包裹代码块 Ctrl + Shift + Delete</p>
+</li>
+<li><p>显示错误提示信息 Ctrl + F1</p>
+</li>
+<li><p>导入包 Alt + Enter</p>
+</li>
+<li><p>手动调出补全提示 Ctrl + Alt + 空格</p>
+</li>
+<li><p>代码补全 Ctrl + 空格</p>
+</li>
+<li><p>代码补全 Ctrl + Shift + Enter</p>
+</li>
+<li><p>代码补全 Ctrl + Shift + 空格</p>
+</li>
+</ul>
+<h3 id="重构快捷键"><a href="#重构快捷键" class="headerlink" title="重构快捷键"></a>重构快捷键</h3><ul>
+<li><p>提取变量 Ctrl + Alt + V</p>
+</li>
+<li><p>提取属性 Ctrl + Alt + F</p>
+</li>
+<li><p>取常量属性 Ctrl + Alt + C</p>
+</li>
+<li><p>提取参数 Ctrl + Alt + P</p>
+</li>
+<li><p>提取方法 Ctrl + Alt + M</p>
+</li>
+<li><p>复制类F5</p>
+</li>
+<li><p>移动类F6</p>
+</li>
+<li><p>重命名 Shift + F6</p>
+</li>
+<li><p>参考 <a href="http://baijiahao.baidu.com/s?id=1599495797670051465&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">Android Studio快捷键大全</a></p>
+</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/学习/" rel="tag"># 学习</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/02/11/23种设计模式/" rel="next" title="23种设计模式">
+                <i class="fa fa-chevron-left"></i> 23种设计模式
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTkyNi8xNjQ1Mw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">白衣饮茶</p>
+              <p class="site-description motion-element" itemprop="description">醉里论道，醒时折花</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Lucky1135" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/1135142320" target="_blank" title="QQ空间">
+                      
+                        <i class="fa fa-fw fa-globe"></i>QQ空间</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ai-guo-yike-bao-bao-cai/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#IDE常用快捷键整理"><span class="nav-number">1.</span> <span class="nav-text">IDE常用快捷键整理</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#IDEA"><span class="nav-number">1.1.</span> <span class="nav-text">IDEA</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#VS-Code"><span class="nav-number">1.2.</span> <span class="nav-text">VS Code</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#主命令框"><span class="nav-number">1.2.1.</span> <span class="nav-text">主命令框</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用快捷键"><span class="nav-number">1.2.2.</span> <span class="nav-text">常用快捷键</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Android-Studio"><span class="nav-number">1.3.</span> <span class="nav-text">Android Studio</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用快捷键-1"><span class="nav-number">1.3.1.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索、导航快捷键"><span class="nav-number">1.3.2.</span> <span class="nav-text">搜索、导航快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编写代码快捷键"><span class="nav-number">1.3.3.</span> <span class="nav-text">编写代码快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重构快捷键"><span class="nav-number">1.3.4.</span> <span class="nav-text">重构快捷键</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+      <div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2433446713&auto=1&height=430"></iframe>
+      </div>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白衣饮茶</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '4rsWuOlVybLa9esvaAqQ82ks-gzGzoHsz',
+        appKey: 'HSOjk3GH6VhzlTnKO4dO0Sks',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":true},"log":false});</script></body>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="zh-CN">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="渗透测试," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="11.23课前演讲关于个人信息安全的一些小看法 提问 你被盗过号吗？/你的虚拟财产受到过损失吗（被洗号）？ 你的QQ/微信等社交账号被异地登陆过吗？/有没有过自己的盆友圈、qq空间会发些莫名奇妙的东西（比如辣鸡广告、神奇链接等）？">
+<meta name="keywords" content="渗透测试">
+<meta property="og:type" content="article">
+<meta property="og:title" content="11.23演讲稿">
+<meta property="og:url" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/index.html">
+<meta property="og:site_name" content="白衣饮茶">
+<meta property="og:description" content="11.23课前演讲关于个人信息安全的一些小看法 提问 你被盗过号吗？/你的虚拟财产受到过损失吗（被洗号）？ 你的QQ/微信等社交账号被异地登陆过吗？/有没有过自己的盆友圈、qq空间会发些莫名奇妙的东西（比如辣鸡广告、神奇链接等）？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/000.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/111.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/222.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/333.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/444.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/555.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/666.jpg">
+<meta property="og:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/777.jpg">
+<meta property="og:updated_time" content="2018-11-22T16:23:00.502Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="11.23演讲稿">
+<meta name="twitter:description" content="11.23课前演讲关于个人信息安全的一些小看法 提问 你被盗过号吗？/你的虚拟财产受到过损失吗（被洗号）？ 你的QQ/微信等社交账号被异地登陆过吗？/有没有过自己的盆友圈、qq空间会发些莫名奇妙的东西（比如辣鸡广告、神奇链接等）？">
+<meta name="twitter:image" content="http://www.youknew.cn/2018/11/22/11-23演讲稿/000.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://www.youknew.cn/2018/11/22/11-23演讲稿/"/>
+
+
+
+
+
+  <title>11.23演讲稿 | 白衣饮茶</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">白衣饮茶</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle"></p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            About
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://www.youknew.cn/2018/11/22/11-23演讲稿/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="白衣饮茶">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="白衣饮茶">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">11.23演讲稿</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-22T20:29:28+08:00">
+                2018-11-22
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/技术/" itemprop="url" rel="index">
+                    <span itemprop="name">技术</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/11/22/11-23演讲稿/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2018/11/22/11-23演讲稿/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="11-23课前演讲"><a href="#11-23课前演讲" class="headerlink" title="11.23课前演讲"></a>11.23课前演讲</h1><p>关于个人信息安全的一些小看法</p>
+<h2 id="提问"><a href="#提问" class="headerlink" title="提问"></a>提问</h2><ul>
+<li>你被盗过号吗？/你的虚拟财产受到过损失吗（被洗号）？</li>
+<li><p>你的QQ/微信等社交账号被异地登陆过吗？/有没有过自己的盆友圈、qq空间会发些莫名奇妙的东西（比如辣鸡广告、神奇链接等）？</p>
+<a id="more"></a>
+</li>
+<li><p>个人亲身经历：</p>
+<ul>
+<li>以前玩毒奶粉<code>dnf</code>，账号被洗劫一空，价值数百块钱的装备被盗。</li>
+<li>玩天刀<code>天涯明月刀</code>，上了钓鱼网站（做的很真实，和官方网站的布局、色调都一样），在上面填了<strong>账号密码二级密码</strong>。结果第二天上线，被洗号，场面惨不忍睹。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="实验"><a href="#实验" class="headerlink" title="实验"></a>实验</h2><p>通过简单的实验告诉大家，为什么要保护个人信息<br>~用手机热点模拟受害者wifi接入点，pc端模拟攻击者通过社工手段收集了被害人的个人信息，并利用这些信息破解被害人的wifi密码~</p>
+<ul>
+<li>这次实验只是为大家展示演讲相关主题，如果有同学对实验细节感兴趣可以私聊我。</li>
+</ul>
+<ol start="0">
+<li><p>实验环境：</p>
+<blockquote>
+<ul>
+<li>PC：<ul>
+<li>cpu: <code>Intel(R) Core(TM) i7-6700HQ CPU @ 2.60Hz</code></li>
+<li>ram: 8.00GB</li>
+<li>系统：大鸟系统<code>parrot os x64</code></li>
+<li>软件：<code>airgeddon</code>,<code>cupp</code>,<code>aircrack-ng</code> </li>
+</ul>
+</li>
+<li>手机：<ul>
+<li>小米8se miui10 开发版8.10.25</li>
+<li>WLAN移动热点</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+</li>
+<li><p>实验过程</p>
+</li>
+</ol>
+<p>1.1 设置手机热点模拟被害人家的wifi<br>    <img src="//www.youknew.cn/2018/11/22/11-23演讲稿/000.jpg" alt="设置热点"></p>
+<p>1.2 用<code>cupp</code>生成字典（因为<code>cupp</code>是外国人弄的脚本，参考的密码也是西方人民的习惯，所以对于我大天朝的人不太适用。本实验用的字典是自己写的）<br>用<code>cupp</code>生成字典<br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/111.jpg" alt="字典1"><br>自己写的字典<br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/222.jpg" alt="字典2"></p>
+<p>1.2 使用<code>airgeddon</code>抓包，并用<code>aircrack-ng</code>破解密码<br>首先先用<code>airgeddon</code>嗅探靶机ap,抓取handshake<br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/333.jpg" alt="嗅探"><br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/444.jpg" alt="抓包1"><br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/555.jpg" alt="抓包2"></p>
+<p>用<code>aircrack-ng</code>破解抓到的包<br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/666.jpg" alt="破解"></p>
+<p>1.3 实验结果（使用字典1秒都不到就出来了）<br><img src="//www.youknew.cn/2018/11/22/11-23演讲稿/777.jpg" alt="结果"></p>
+<ol start="2">
+<li>结论（划重点啦  要考！）<blockquote>
+<ul>
+<li>如果攻击者在不掌握被害人丝毫个人信息（暴力破解），那么想要破解你的密码难如登天。~暑假我试过用无限穷举法破解8位纯数字密码，结果用了一晚上都没跑出来╮(╯-╰)╭~</li>
+<li>而假设攻击者掌握了被害人一定量的个人信息（包括姓名、电话、生日，甚至家人，盆友，宠物等等），那么以上实验我觉得应该能说明一些问题了</li>
+</ul>
+</blockquote>
+</li>
+</ol>
+<p><em>演讲最后祝大家生活愉快，学习工作顺利。谢谢！</em></p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/渗透测试/" rel="tag"># 渗透测试</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/10/23/一直舍不得删的句子-1/" rel="next" title="一直舍不得删的句子-1">
+                <i class="fa fa-chevron-left"></i> 一直舍不得删的句子-1
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/02/11/23种设计模式/" rel="prev" title="23种设计模式">
+                23种设计模式 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zOTkyNi8xNjQ1Mw"></div>
+    </div>
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">白衣饮茶</p>
+              <p class="site-description motion-element" itemprop="description">醉里论道，醒时折花</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives">
+              
+                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/Lucky1135" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://user.qzone.qq.com/1135142320" target="_blank" title="QQ空间">
+                      
+                        <i class="fa fa-fw fa-globe"></i>QQ空间</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://www.zhihu.com/people/ai-guo-yike-bao-bao-cai/activities" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#11-23课前演讲"><span class="nav-number">1.</span> <span class="nav-text">11.23课前演讲</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#提问"><span class="nav-number">1.1.</span> <span class="nav-text">提问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实验"><span class="nav-number">1.2.</span> <span class="nav-text">实验</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+      <div>
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=450 src="//music.163.com/outchain/player?type=0&id=2433446713&auto=1&height=430"></iframe>
+      </div>
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">白衣饮茶</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: '4rsWuOlVybLa9esvaAqQ82ks-gzGzoHsz',
+        appKey: 'HSOjk3GH6VhzlTnKO4dO0Sks',
+        placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"right","width":100,"height":200},"mobile":{"show":true},"log":false});</script></body>
+</html>
